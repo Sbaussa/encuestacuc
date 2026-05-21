@@ -226,14 +226,6 @@ export default function SurveyPage() {
                 </div>
               ))}
             </div>
-
-            {/* Note */}
-            <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl">
-              <p className="text-xs text-amber-800 font-semibold mb-1">Nota para los estudiantes aplicadores</p>
-              <p className="text-xs text-amber-700">
-                Este instrumento debe aplicarse preferiblemente a personas mayores de edad. En todos los casos, la encuesta debe mantenerse anónima.
-              </p>
-            </div>
           </main>
 
           {/* Fixed consent buttons */}
