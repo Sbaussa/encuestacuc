@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:\\\\Users\\\\User\\\\Documents\\\\nuevo\\\\app\\\\api\\\\auth\" 2>/dev/null; ls \"c:\\\\Users\\\\User\\\\Documents\\\\nuevo\\\\app\\\\api\\\\\")",
+      "PowerShell(Stop-Process *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\User\\Documents\\nuevo\\app\\api"
+    ]
+  }
+}
