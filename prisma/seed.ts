@@ -50,7 +50,14 @@ const consentText = JSON.stringify({
 });
 
 async function main() {
-  await prisma.survey.deleteMany({});
+  const existingSurvey = await prisma.survey.findFirst({
+    where: { title: "Percepción de calor e isla de calor en el campus de la Universidad de la Costa" }
+  });
+
+  if (existingSurvey) {
+    console.log("✓ La encuesta ya existe en la base de datos. Saltando la creación...");
+    return;
+  }
 
   const survey = await prisma.survey.create({
     data: {
